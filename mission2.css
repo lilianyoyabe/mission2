@@ -55,10 +55,87 @@ table {
 
 .container{
     max-width: 1088px;
-    padding:0 20px;
     margin: 0 auto;
-    border: 1px solid #000;
+    /* border: 1px solid #000; */
 }
+.header{
+    display:flex;
+    justify-content: space-between;
+    padding: 24px 0px;
+}
+.logo{
+    height: 40px;
+}
+.introduction{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 217px;
+}
+.introduction img{
+    height: 534px;
+    width: 532px;
+}
+.info{
+    padding-top: 188px;
+}
+.info p.p-s-black.p-m.p-green{
+    padding-bottom: 15px;
+}
+
+.info h1{
+    padding-bottom: 16px;
+}
+
+.platform{
+    text-align: center;
+    margin-bottom: 100px;
+}
+.platform h3{
+    padding-bottom: 48px;
+}
+.oneplatform img{
+    width: 90px;
+}
+
+.platform-content{
+    margin:0 auto;
+    display: flex;
+    justify-content: space-around;
+}
+.oneplatform p.p-s-black.p-xl.bold{
+    padding: 24px 0px;
+}
+
+
+.roles h3{
+    padding-bottom: 16px;
+    text-align: center;
+}
+
+.roles p.p-s-black.p-l{
+    padding-bottom: 48px;
+    text-align: center;
+}
+
+.fourroles{
+    display:flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+.onerole{
+    border-radius:10px;
+    box-shadow: 0px 2px 10px #00000014;
+    width: 260px;
+    text-align: center;
+
+}
+.onerole p.p-s-black.p-green.bold{
+    padding:16px 0px;
+}
+.onerole p.p-s-black{
+    padding-bottom: 24px;
+}
+
 .footer{
     background: #F5F5F5;
     text-align: center;
@@ -68,7 +145,6 @@ table {
     background-image: url('img//bg/bg@2x.png');
     background-size: cover;
     background-repeat:no-repeat;
-    background-attachment:fixed;
     background-position:center top;
     text-align: center;
     padding-top: 260px;
@@ -78,18 +154,133 @@ table {
     display:inline-block;
     margin-top: 48px;
 }
+.feedback h3{
+    margin-top: 100px;
+    margin-bottom: 96px;
+    text-align: center;
+}
+
+.reviews{
+    display:flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+
+.review{
+    padding:48px 32px 24px 32px;
+    width: 352px;
+    height: 248px;
+    box-shadow: 0px 2px 10px #00000014;
+    border-radius: 12px;
+}
+
+.circlepic{
+    position: relative;
+    top: -280px;
+    left:0px;
+    z-index: 10;
+}
+
+
+.nameandrate{
+    display:flex;
+    justify-content: space-between;
+}
+
+.review p.p-s-black.bold{
+    padding-bottom: 8px;
+}
+
+.rating{
+    display:flex;
+}
+
+.features{
+    display: flex;
+}
+.features-4blocks{
+    display: flex;
+    flex-wrap: wrap;
+    width: 507px;
+    justify-content: space-between;
+
+
+}
+.one-feature{
+    width: 230px;
+    box-shadow: 0px 2px 10px #00000014;
+    border-radius: 12px;
+    padding:32px 32px;
+    margin-bottom: 28px;
+}
+
+
+.one-feature img{
+    display: block;
+    padding: 15px 15px;
+    box-shadow: 0px 2px 10px #00000014;
+    border-radius: 50%;
+    margin-bottom: 24px;
+}
+.one-feature p{
+    display: block;
+    padding-bottom: 16px;
+    line-height: 1.5;
+}
+
+.feature-explaination {
+    text-align: left;
+    padding-left: 137px;
+    padding-top: 165px;
+    line-height: 1.5;
+}
+
+.feature-explaination h3{
+    padding-bottom: 20px;
+}
+.feature-explaination p{
+    padding-bottom: 24px;
+}
+
 
 /*元素*/
 .p-s-black{
+    line-height: 1.5;
     color: #221E1F;
     font-size: 16px;
     font-family: Noto Sans TC, Regular;
+    
+}
+.p-m{
+    font-size: 18px;
+}
+
+.p-l{
+    font-size: 20px;
+}
+.p-xl{
+    font-size: 24px;
+}
+.p-grey{
+    color: #747474;
+}
+.p-green{
+    color: #56C4C5;
+}
+.title-1{
+    font-size: 48px;
+    font-family: Noto Sans TC, Bold;
+    color: #221E1F;
+    line-height: 1.5;
 }
 .title-3{
     font-size: 32px;
     font-family: Noto Sans TC, Bold;
     color: #221E1F;
 }
+
+
+
 .bottom-plan{
     color: #FFFFFF;
     background: #56C4C5;
@@ -99,6 +290,43 @@ table {
     border-radius: 27px;
     padding: 12px 32px;
 }
+.orange{
+    background-color:#FF5D50;
+}
+
 .bold{
     font-weight:bold; 
 }
+.circlepic img{
+    box-shadow: 0px 2px 10px #00000014;
+    width: 80px;
+	border-radius: 50%;
+}
+
+.star{
+    height: 16px;
+    padding-right: 8.22px;
+}
+
+.review hr{
+    margin-top: 24px;
+    margin-bottom: 24px;
+    background-color: #DDDDDD;
+    height:1px; 
+    border:none;
+}
+
+.circlepic-m img{
+    width: 52px;
+    height: 52px;
+}
+.squarepic{
+    width: 260px;
+    height: 260px;
+    border-top-left-radius:10px;
+    border-top-right-radius:10px;
+}
+/* .normalpic img{
+    width: 90px;
+    height: 90px;
+} */
