@@ -49,29 +49,41 @@ table {
 }
 
 /*-------自己寫的部分-------*/
-/*~~~~~~~容器~~~~~~~*/
+.wrap{
+    /* height: 100vh;     */
+    margin: 0 auto;
+    background-image: url('img/bg_yellow.svg')
+    ,url('img/Ellipse\ 3.svg')
+    ,url('img/Ellipse\ 18.svg')
+    ,url('img/Ellipse\ 19.svg');
+    background-repeat:no-repeat;
+    background-position: top right,top 589px left -222px,top 1694px left 1156px,top 2640px left 50px;
+    background-size: 851px 768px,360px 360px,310px 310px,150px 150px;
+}
+
 *,*::before,*::after{
     box-sizing: border-box;
 }
+
+
+/*~~~~~~~容器~~~~~~~*/
+
 /*all*/
-.wrap{
-    height: 100vh;    
-    margin: 0 auto;
+    .container{
+        max-width: 1085px;
+        margin: 0 auto;
+        width: 100vw;
     }
 
-@media(max-width:1440px){
-    .container{
-        max-width: 1088px;
-        margin: 0 auto;
-        /* border: 1px solid #000; */
-    }
-    /*header*/
+   
+/*header*/
     .header{
+        margin: 0 auto;
         display:flex;
         justify-content: space-between;
         padding: 24px 0px;
     }
-    /*introduction*/
+/*introduction*/
     .introduction{
         display: flex;
         justify-content: space-between;
@@ -91,7 +103,7 @@ table {
     .info h1{
         padding-bottom: 16px;
     }
-    /*platform*/
+/*platform*/
     .platform{
         text-align: center;
         margin-bottom: 100px;
@@ -112,7 +124,7 @@ table {
         padding: 24px 0px;
     }
 
-    /*roles*/
+/*roles*/
     .roles h3{
         padding-bottom: 16px;
         text-align: center;
@@ -127,12 +139,14 @@ table {
         display:flex;
         justify-content: space-between;
         margin-bottom: 100px;
+        width: 100%;
     }
     .onerole{
         border-radius:10px;
         box-shadow: 0px 2px 10px #00000014;
         width: 260px;
         text-align: center;
+        background-color: #FFFFFF;
 
     }
     .onerole p.p-s-black.p-green.bold{
@@ -141,7 +155,7 @@ table {
     .onerole p.p-s-black{
         padding-bottom: 24px;
     }
-    /*features*/
+/*features*/
     .features{
         display: flex;
     }
@@ -150,7 +164,8 @@ table {
         flex-wrap: wrap;
         justify-content: space-between;
         margin: 0 auto;
-
+        width: 507px;
+        height: 588px;
     }
     .one-feature{
         width: 230px;
@@ -158,6 +173,7 @@ table {
         border-radius: 12px;
         padding:32px 32px;
         margin-bottom: 28px;
+        background-color: #FFFFFF;
     }
 
     .one-feature img{
@@ -187,7 +203,7 @@ table {
         padding-bottom: 24px;
     }
 
-    /*feedback*/
+/*feedback*/
     .feedback h3{
         margin-top: 100px;
         margin-bottom: 96px;
@@ -206,11 +222,12 @@ table {
         height: 248px;
         box-shadow: 0px 2px 10px #00000014;
         border-radius: 12px;
+        background-color: #FFFFFF;
     }
 
     .circlepic{
         position: relative;
-        top: -280px;
+        top: -300px;
         left:0px;
         z-index: 10;
     }
@@ -227,13 +244,17 @@ table {
     .rating{
         display:flex;
     }
+    .swiper-backface-hidden .swiper-slide{
+        display: none;
+    }
 
-    /*quote*/
+/*quote*/
     .quote{
-        background-image: url('img//bg/bg@2x.png');
-        background-size: cover;
+        height: 503px;
+        background-image: url('https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/home_footer.svg');
         background-repeat:no-repeat;
-        background-position:center top;
+        background-position:top center;
+        background-size:cover;
         text-align: center;
         padding-top: 260px;
         padding-bottom: 100px;
@@ -243,15 +264,14 @@ table {
         margin-top: 48px;
     }
 
-    /*footer*/
+/*footer*/
     .footer{
         background: #F5F5F5;
         text-align: center;
         padding:16px 0px;
     }
 
-
-    /*~~~~~~~元素~~~~~~~*/
+/*~~~~~~~元素~~~~~~~*/
     .p-s-black{
         line-height: 1.5;
         color: #221E1F;
@@ -334,13 +354,160 @@ table {
     .logo{
         height: 40px;
     }
-    /* .normalpic img{
-        width: 90px;
-        height: 90px;
-    } */
+
+@media(max-width:1200px){
+    .feature-explaination {
+        padding-left: 50px;
+    }
+    .onerole{
+        width: 200px;
+    }
+    .squarepic{
+        width: 200px;
+        height: 200px;
+    }
+    .review{    
+        padding-top: 100px;
+        width: 300px;
+        height: 350px;
+    }
+
+    .circlepic{
+        position: relative;
+        top: -380px;
+        left:0px;
+        z-index: 10;
+    }
 }
 
-@media(max-width:375px){
+
+@media(max-width:992px){
+    .introduction img{
+        height: 400px;
+        width: 400px;
+        padding-top: 100px;
+    }
+    .info{
+        padding-top: 80px;
+    }
+    .oneplatform{
+        padding: 10px 10px;
+    }
+    .oneplatform img{
+        width: 60px;
+    }
+    
+    .platform-content{
+        flex-wrap: wrap;
+    }
+
+    .fourroles{
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .onerole{
+        width: 250px; 
+        margin-bottom: 30px;   
+    }
+    .squarepic{
+        width: 250px;
+        height: 250px;
+        border-top-left-radius:10px;
+        border-top-right-radius:10px;
+    }
+    .features{
+        flex-direction: column-reverse; 
+        
+    }
+    .features-4blocks{
+        width: 600px;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    .one-feature{
+        width: 250px;
+        height: 300px;
+        margin: 20px 20px;
+    } 
+    .feature-explaination{
+        text-align: center;
+        padding-left: 0px;
+        padding-top: 0px;
+    }
+    .review{
+        height: auto;
+        margin-right: 40px;
+    }
+
+    .reviews{
+        overflow: auto;
+        
+    }
+    .nameandrate{
+        flex-direction: column;
+    }
+
+    .circlepic{
+        top:-410px;
+    }
+    
+
+
+    
+  
+   
+}
+
+@media(max-width:767px){
+    .swiper-backface-hidden .swiper-slide{
+        display: block;
+    }
+    .reviews{
+        display: none;
+    }
+    
+    .review{
+        margin: 90px 20px 90px 20px;
+        width: 335px;
+        height: 248px;
+        padding: 48px 17px 16px 17px;
+       
+    }
+
+    .features-4blocks{
+        display: block;
+        flex-wrap: wrap;
+        height: auto;
+        width: 300px;
+    }
+    .one-feature{
+        text-align: center;
+        padding: 10px 0px;
+    }
+    .one-feature img{
+        margin: 35px auto;
+    }
+   .circlepic{
+       top: -290px;
+   }
+   
+   .nameandrate{
+       flex-direction:row;
+   }
+    .p-s-black.bold{
+        margin-bottom: 0px;
+    }
+}
+
+
+
+
+
+
+@media(max-width:380px) {
     /*~~~~~~~元素~~~~~~~*/
     .bottom-plan{
         font-size: 16px;
@@ -360,10 +527,20 @@ table {
     .title-1{
         font-size: 32px;
     }
-    
-    
+    .squarepic{
+        width: 260px;
+        height: 260px;
+    }
     
     /*all*/
+    .wrap{
+        background-image: url('img/Ellipse\ 3.svg')
+        ,url('img/Ellipse\ 18.svg')
+        ,url('img/Ellipse\ 19.svg');
+        background-repeat:no-repeat;
+        background-position: top 743px left -77px,top 3067px left 287px,top 4827px left -76px;
+        background-size: 126px 126px,135px 135px,150px 150px;
+    }
     .container{
         padding: 0px 20px;
         margin: 0 auto;
@@ -377,6 +554,10 @@ table {
     .introduction{
         flex-wrap: wrap;
         margin-bottom: 217px;
+        margin: 0px auto;
+        background-image: url('img/Path\ 157.svg');
+        background-repeat:no-repeat;
+        background-position:center bottom;
     }
     .introduction img{
         /* width: 304px;
@@ -385,8 +566,9 @@ table {
         padding-top: 32px;
     }
     .info{
-        padding-top: 104px;
+        padding-top: 32px;
     }
+
     .info p.p-s-black.p-m.p-green{
         padding-bottom: 15px;
     }
@@ -395,6 +577,9 @@ table {
         padding-bottom: 16px;
     }
     /*platform*/
+    .platform{
+        padding-top: 100px;
+    }
     .platform h3{
         padding-bottom: 32px;
     }
@@ -453,7 +638,7 @@ table {
     }
     .one-feature p.p-s-block.p-m.bold{
         font-size: 18px;
-    }
+    } */
 
     /*feedback*/
     
@@ -466,13 +651,11 @@ table {
         flex-wrap: wrap;
         margin-bottom: 100px;
     }
-
     .review{
         margin-bottom: 70px;
         padding-bottom: 16px;
         
     }
-
     .review hr{
         margin-top: 16px;
         margin-bottom: 16px;
@@ -496,7 +679,7 @@ table {
 
     /*footer*/
     .footer{
-        background: #F5F5F5;
+        background-color: #F5F5F5;
         text-align: center;
         padding:16px 0px;
     }
