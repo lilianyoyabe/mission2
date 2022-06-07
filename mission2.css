@@ -480,6 +480,9 @@ table {
         align-items: center;
     }
     /*introduction*/
+    .info{
+        padding-top: 15px;
+    }
     .introduction{
         flex-wrap: wrap;
         margin-bottom: 217px;
@@ -489,10 +492,11 @@ table {
         background-position:center bottom;
     }
     .introduction img{
-        /* width: 304px;
-        height: 305.5px; */
         width: 100%;
         padding-top: 32px;
+    }
+    .platform h3{
+        padding-top: 40px;
     }
     .swiper-backface-hidden .swiper-slide{
         display: block;
