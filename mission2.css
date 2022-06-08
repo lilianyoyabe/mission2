@@ -314,6 +314,11 @@ table {
         border-radius: 27px;
         padding: 12px 32px;
     }
+    .bottom-plan:hover{
+        color: #FFFFFF;
+        text-decoration: none;
+    }
+
     .orange{
         background-color:#FF5D50;
     }
